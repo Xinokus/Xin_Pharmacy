@@ -29,6 +29,7 @@ header{
 }
 .header_logo_con img{
     width: 80%;
+    height: 80%;
 }
 .header_search_bar_con{
     width: 80%;
@@ -60,45 +61,46 @@ header{
     color: white;
     font-size: calc(var(--index) * 1.6);
     font-weight: 800;
-    -webkit-text-stroke: 0.1vw black;
-    letter-spacing: -0.1vw;
-    margin-right: 0.6vw;
+    -webkit-text-stroke: calc(var(--index) * 0.05) black;
+    letter-spacing: calc(var(--index) * -0.05);
+    margin-right: calc(var(--index) * 0.3);
 }
 .header_location img{
     width: 3vw;
     opacity: 0.5;
 }
 .header_burger{
-    width: 25%;
+    width: 12%;
     height: calc(var(--index) * 1.8);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: calc(var(--index) * 2);
 }
 .burger_line{
-    width: 55%;
+    width: 100%;
     height: calc(var(--index) * 0.23);
     background-color: white;
     border-radius: calc(var(--index) * 2);
-    border: 0.15vw solid black;
+    border: calc(var(--index) * 0.1) solid black;
 }
 .main_img{
     width: 100%;
-    height: calc(var(--index) * 32);
+    height: calc(var(--index) * 36);
     background-image: url(img/header_img.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .main_img_blur{
     width: 100%;
-    height: calc(var(--index) * 32);
+    height: calc(var(--index) * 36);
     backdrop-filter: blur(4px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .main_img_inside{
-    width: 50%;
+    width: calc(var(--index) * 33);
     height: calc(var(--index) * 12);
     background-color: rgba(61, 61, 61, 0.7);
     border-radius: 3vw;
@@ -108,13 +110,121 @@ header{
     flex-direction: column;
     color: white;
     font-size: calc(var(--index) * 1.35);
+    margin-top: calc(var(--index) * -3.75);
 }
 .main_img_heading{
-    width: 60%;
+    width: calc(var(--index) * 20);
+    height: calc(var(--index) * 3.7);
     text-align: center;
     font-size: calc(var(--index) * 3);
+    line-height: calc(var(--index) * 2.5);
+    font-weight: 700;
 }
 .main_img_description{
-    width: 80%;
+    width: calc(var(--index) * 27);
     text-align: center;
+}
+.main_about{
+    width: 100%;
+    height: calc(var(--index) * 36);
+    background-color: white;
+    display: flex;
+}
+.main_about_left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.main_about_textbox{
+    width: 80%;
+    height: 65%;
+    background-color: rgba(128, 128, 128, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4vw;
+    color: black;
+    z-index: 10;
+}
+.main_about_heading{
+    width: 70%;
+    height: 15%;
+    text-align: center;
+    font-size: calc(var(--index) * 2.5);
+    font-weight: 700;
+}
+.main_about_description{
+    width: 70%;
+    height: 70%;
+    font-size: calc(var(--index) * 1.1);
+    line-height: calc(var(--index) * 1.4);
+    text-align: center;
+}
+.main_about::after{
+    content: '';
+    position: absolute;
+    bottom: calc(var(--index) * -61);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/after.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 9;
+}
+.main_about_woman{
+    margin-left: calc(var(--index) * 3);
+}
+.main_about_woman img{
+    width: calc(var(--index) * 35);
+    height: calc(var(--index) * 35);
+}
+.main_offer{
+    width: 100%;
+    height: calc(var(--index) * 44);
+    background-color: white;
+}
+.main_offer_name{
+    width: 100%;
+    height: calc(var(--index) * 11.3);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: calc(var(--index) * 3.5);
+    font-weight: 700;
+}
+.main_offer_slider{
+    width: 100%;
+    height: calc(var(--index) * 32.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_offer_arrow{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_offer_arrow_itself{
+    width: 40%;
+    height: 15%;
+    background-color: white;
+    border-radius: calc(var(--index) * 2);
+    border: calc(var(--index) * .3) solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_offer_arrow_itself img:nth-of-type(2){
+    rotate: 180deg;
+}
+.main_offer_slider_container{
+    width: 62%;
+    height: 100%;
 }
