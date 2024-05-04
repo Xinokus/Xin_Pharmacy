@@ -371,7 +371,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.main_appoint_map img{
+.main_appoint_map iframe{
     width: 98%;
     height: 96.5%;
 }
